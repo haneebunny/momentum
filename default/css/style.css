@@ -1,7 +1,33 @@
+*,
 body {
-  background-color: antiquewhite;
+  margin: 0px;
 }
 
-.hidden {
+body {
+  background-color: #eef4eb;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  background-color: #bfdeaf;
+  border: 0px 1px 1px 0px #8aa47d;
+}
+
+/* .hidden {
   display: none;
+} */
+
+.name-input {
+  width: 160px;
+  height: 50px;
+  font-size: 1.3rem;
+  background-color: rgba(255, 255, 255, 0.808);
+  border: none;
 }
