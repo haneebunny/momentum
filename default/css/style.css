@@ -1,6 +1,15 @@
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 body {
   margin: 0px;
+  font-family: "DungGeunMo", sans-serif;
 }
 
 body {
@@ -20,9 +29,20 @@ body {
   border: 0px 1px 1px 0px #8aa47d;
 }
 
-/* .hidden {
-  display: none; 잔디 내놔 
-} */
+.greeting {
+}
+
+.contents {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hidden {
+  display: none;
+}
 
 .name-input {
   width: 160px;
@@ -32,5 +52,44 @@ body {
   border: none;
 }
 
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-input {
+  width: 250px;
+  height: 30px;
+  padding: 5px 10px;
+  color: #8aa47d;
+  background: transparent;
+  border: 1px solid #8aa47d;
+  border-radius: 15px;
+}
+
 .submit-button {
+}
+
+.mood-ul {
+  list-style: none;
+}
+
+.mood {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.mood:hover {
+  background-color: #8aa47d;
+}
+
+.moodImg {
+  width: 300px;
+}
+
+img {
+  width: 200px;
+}
+li {
+  padding: 5px;
 }
