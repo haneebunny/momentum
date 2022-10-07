@@ -20,9 +20,12 @@ function deleteToDo(event) {
 
 function paintToDo(newTodo) {
   const li = document.createElement("li");
-  URL.id = newTodo.id;
+  li.className = "todoList";
+  li.id = newTodo.id;
   const span = document.createElement("span");
+  span.className = "todo";
   const button = document.createElement("button");
+  button.className = "xBtn";
   button.innerText = "X";
   button.addEventListener("click", deleteToDo);
   li.appendChild(span);
@@ -51,5 +54,5 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 if (savedToDos) {
   const parsedToDos = JSON.parse(savedToDos);
   toDos = parsedToDos;
-  parsedToDos.forEach(painToDo);
+  parsedToDos.forEach(paintToDo);
 }

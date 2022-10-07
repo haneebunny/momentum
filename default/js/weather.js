@@ -8,6 +8,7 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       const weather = document.querySelector("#weather span:first-child");
       const city = document.querySelector("#weather span:last-child");
       city.innerText = data.name;
@@ -16,7 +17,7 @@ function onGeoOk(position) {
 }
 
 function onGeoError() {
-  alert("위치를 찾을 수 없습니다. 날씨 정보가 제공되지 않습니다.");
+  alert("위치 허용해주세요. 제발요,,,");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);

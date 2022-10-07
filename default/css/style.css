@@ -6,10 +6,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "RIDIBatang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 body {
   margin: 0px;
-  font-family: "DungGeunMo", sans-serif;
+  font-family: "RIDIBatang", sans-serif;
+  color: white;
 }
 
 body {
@@ -25,11 +34,18 @@ body {
 .header {
   width: 100%;
   height: 40px;
-  background-color: #bfdeaf;
-  border: 0px 1px 1px 0px #8aa47d;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
 }
 
 .greeting {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contents {
@@ -57,16 +73,48 @@ body {
   flex-direction: column;
 }
 
+/* -----------TODO------------- */
+
 .todo-input {
   width: 250px;
   height: 30px;
   padding: 5px 10px;
-  color: #8aa47d;
+  color: #ffffff;
   background: transparent;
-  border: 1px solid #8aa47d;
-  border-radius: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
 }
 
+.todo-input::placeholder {
+  color: white;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.todoList {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo {
+  padding-left: 0;
+}
+.xBtn {
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  background-color: transparent;
+  border: transparent;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .submit-button {
 }
 
@@ -80,7 +128,7 @@ body {
 }
 
 .mood:hover {
-  background-color: #8aa47d;
+  background-color: #ffffff54;
 }
 
 .moodImg {
